@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.guiying712.login"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <application>
+    <!-- Main Activity -->
+    <activity
+        android:name=".LoginActivity"
+        android:theme="@style/SplashTheme">
+    </activity>
+
+  </application>
+
+</manifest>

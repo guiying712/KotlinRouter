@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'java-gradle-plugin'
+    id 'maven'
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+dependencies {
+    implementation "com.android.tools.build:gradle:$gradle_version"
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+install {
+    repositories.mavenInstaller {
+        pom.version = '0.0.1' // 配置插件版本号
+        pom.artifactId = 'router-plugin' // 配置插件标识
+        pom.groupId = 'com.guiying712.plugin' // 配置插件组织
+    }
+}
